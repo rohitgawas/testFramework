@@ -3,7 +3,6 @@ import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
 const EV= process.env.TEST_ENV;
 dotenv.config({ path: `${EV}.env` });
-console.log('Loaded USERNAME:', process.env.DEFAULT_USERNAME);
 
 /**
  * Read environment variables from file.
